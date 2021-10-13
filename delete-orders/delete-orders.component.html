@@ -1,0 +1,50 @@
+<div *ngIf = "!flag">
+    <form>
+      
+        <div class="from-group"><br><br>
+            <label for="name">order Id</label>
+            <input type="text" name="order.orderId" id="" class="form-control" placeholder="Enter orderId" [(ngModel)] = "order.orderId">
+        </div>
+        <br>
+        <div class="from-group">
+            <button (click)="deleteProduct()" class="btn btn-warning btn-md">View</button>
+        </div>
+        <br>
+      
+    </form>
+    </div>
+    <!-- <h3>{{exmsg}}</h3> -->
+        <div *ngIf = "flag">
+            <form>
+                <div class="from-group">
+                    <label for="name">Address Id</label>
+                    <input type="text" name="order.orderId" id="" class="form-control" placeholder="Enter address Id" [(ngModel)] = "order.orderId" readonly>
+                </div>
+                <br>
+                <div class="from-group">
+                    <label for="name">StreetNo</label>
+                    <input type="text" name="order.orderDate" id="" class="form-control" placeholder="Enter street no Name" [(ngModel)] = "order.orderDate">
+                </div>
+                <br>
+                <div class="from-group">
+                    <label for="auth">BuildingName</label>
+                    <input type="text" name="order.orderStatus" id="" class="form-control" placeholder="Enter building name" [(ngModel)] = "order.orderStatus">
+                </div>
+                <br>
+                
+                <div class="from-group">
+                    <label for="auth">City</label>
+                    <input type="text" name="order.customer.customerId" id="" class="form-control" placeholder="Enter customerId" [(ngModel)] = "order.customer.customerId">
+                </div>
+                <br>
+                <div class="from-group">
+                    <label for="auth">State</label>
+                    <input type="text" name="order.address.addressId" id="" class="form-control" placeholder="Enter state" [(ngModel)] = "order.address.addressId">
+                </div>
+                <br>
+                
+                <div class="from-group">
+                     <button (click)="deleteProduct()" class="btn btn-warning btn-md">Delete</button>
+                </div>
+    
+    </form>

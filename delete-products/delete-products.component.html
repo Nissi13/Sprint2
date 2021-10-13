@@ -1,0 +1,73 @@
+<div *ngIf = "!flag">
+   
+    <form >
+      
+        <div class="from-group"><br><br>
+            <label for="name">Product Id</label>
+            <input type="text" name="product.productId" id="" class="form-control" placeholder="Enter Product Id" [(ngModel)] = "product.productId">
+        </div>
+        <br>
+        <div class="from-group">
+            <button (click)="delsearch()" class="btn btn-warning btn-md">Delete</button>
+        </div>
+        <br>
+      
+    </form>
+
+    </div>
+    <h3>{{exmsg}}</h3>
+        <div *ngIf = "flag">
+         
+            <form >  
+                <div class="from-group">
+                    <label for="name">Product Id</label>
+                    <input type="text" name="product.productId" id="" class="form-control" placeholder="Enter address Id" [(ngModel)] = "product.productId" readonly>
+                </div>
+                <br>
+                <div class="from-group">
+                    <label for="name">Product Name</label>
+                    <input type="text" name="product.productName" id="" class="form-control" placeholder="Enter Product Name" [(ngModel)] = "product.productName">
+                </div>
+                <br>
+                <div class="from-group">
+                    <label for="auth">Price</label>
+                    <input type="text" name="product.price" id="" class="form-control" placeholder="Enter Price" [(ngModel)] = "product.price">
+                </div>
+                <br>
+                
+                <div class="from-group">
+                    <label for="auth">Color</label>
+                    <input type="text" name="product.color" id="" class="form-control" placeholder="Enter Color" [(ngModel)] = "product.color">
+                </div>
+                <br>
+                <div class="from-group">
+                    <label for="auth">Dimension</label>
+                    <input type="text" name="product.dimension" id="" class="form-control" placeholder="Enter Dimension" [(ngModel)] = "product.dimension">
+                </div>
+                <br>
+                <div class="from-group">
+                    <label for="auth">specification</label>
+                    <input type="text" name="product.specification" id="" class="form-control" placeholder="Enter specification" [(ngModel)] = "product.specification">
+                </div>
+                <br>
+                <div class="from-group">
+                    <label for="auth">manufacturer</label>
+                    <input type="text" name="product.manufacturer" id="" class="form-control" placeholder="Enter manufacturer" [(ngModel)] = "product.manufacturer">
+                </div>
+                <br>
+                <div class="from-group">
+                    <label for="auth">quantity</label>
+                    <input type="text" name="product.quantity" id="" class="form-control" placeholder="Enter quantity " [(ngModel)] = "product.quantity">
+                </div>
+                <br>
+                <div class="from-group">
+                    <label for="auth">category id</label>
+                    <input type="text" name="product.category.catId" id="" class="form-control" placeholder="Enter catid" [(ngModel)] = "product.category.catId">
+                </div>
+                <br>
+                <div class="from-group">
+                  
+                 <button (click)="deladdr()" class="btn btn-warning btn-md">Delete</button>
+            </div>
+
+</form>
